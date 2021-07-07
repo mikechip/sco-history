@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Скриншоты</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            padding: 5rem;
+        }
+    </style>
+</head>
+<body>
+  <h1 style="text-align: center">Загрузка...</h1>
+
+  <script>
+      const images = [
+          "0ae701477bf385508fff9ffc431689cf.jpg", "482011f2b4c300acf7ce3fef4f1209c8.jpg",
+          "0c0f64449c85383ad6a8c1060900df0b.jpg", "76313ff44d7e3d6617cc4e4f9bf4f709.jpg",
+          "13bec82e4171a8dddef61d653a80d557.jpg", "86691449d0aa4d9e54629acf92dffec8.jpg",
+          "1ace1a18e5715388afe0bae6ce9e5401.jpg", "97c23c8d0a3f1e010bc325115c6c5aef.jpg",
+          "2dad8bba81a618c2224f06a3fecf2256.jpg", "9f80ef6b3a15787f8fb1125206ae155a.jpg",
+          "2dc3ad476e24a7ace1e3590005195f1f.jpg", "a0111c57967f5071e2832ef63e99c78e.jpg",
+          "2f5270145197e11a4d9576ec799f7329.jpg", "a7ba956c3e6e762c4740ef30db8dfb1f.jpg",
+          "335db1e5728f21839ce8421cc597f563.jpg", "ca520bb1e6c6702e943244b056ed1c08.jpg",
+          "3aa565579f57a9095184aebfbd1c37f0.jpg", "ec46dc54c28ff856152e56dea3526afa.jpg",
+      ];
+
+      const el = document.createElement('div');
+
+      for (let image of images) {
+          const img = document.createElement('img');
+          img.src = 'screens/' + image;
+          img.alt = 'Скриншот';
+          el.appendChild(img);
+      }
+
+      document.body.appendChild(el);
+      document.getElementsByTagName('h1')[0].remove();
+  </script>
+</body>
+</html>
